@@ -76,6 +76,7 @@ const Signup = () => {
 
         await saveUser(formData);
         sessionStorage.setItem('registrationStatus', 'success');
+        sessionStorage.setItem('username', user.name);
         navigate('/confirm');
     };
 
