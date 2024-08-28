@@ -1,7 +1,7 @@
 export const saveUser = async (user) => {
     console.log("User:", user);
     try {
-        const response = await fetch("http://localhost:8080/saveUser", {
+        const response = await fetch("yourhr-server.up.railway.app/saveUser", {
             method: "POST",
             body: user
         });
