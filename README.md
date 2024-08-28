@@ -2,13 +2,13 @@
 
 ### Table of Contents
 
-1. [Overview](#overview-1)
-2. [Architecture](#architecture-1)
-3. [Project Structure](#project-structure-1)
+1. [Overview](#overview)
+2. [Architecture](#architecture)
+3. [Project Structure](#project-structure)
 4. [State Management](#state-management)
 5. [Routing](#routing)
 6. [Form Handling](#form-handling)
-8. [Running the Application](#running-the-application-1)
+8. [Running the Application](#running-the-application)
 
 ### Overview
 
