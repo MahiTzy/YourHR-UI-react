@@ -1,20 +1,32 @@
 # YourHR Frontend Service (React + Vite)
 
-### Table of Contents
+## Table of Contents
 
 1. [Overview](#overview)
-2. [Architecture](#architecture)
-3. [Project Structure](#project-structure)
-4. [State Management](#state-management)
-5. [Routing](#routing)
-6. [Form Handling](#form-handling)
+2. [Demo](#demo)
+3. [Architecture](#architecture)
+4. [Project Structure](#project-structure)
+5. [State Management](#state-management)
+6. [Routing](#routing)
+7. [Form Handling](#form-handling)
 8. [Running the Application](#running-the-application)
 
-### Overview
+## Overview
 
 The frontend of the **YourHR** application is built using **React** and **Vite**. It provides a user interface for job seekers to submit their information and receive a confirmation upon successful submission. The application is designed to be lightweight, responsive, and easy to use.
 
-### Architecture
+## Demo
+
+### Home Page
+![Screenshot 2024-08-31 at 11-22-57 Home](https://github.com/user-attachments/assets/55bce9fa-f22d-41e7-9b1a-dde4ec55cddb)
+
+### SignUp Page
+![Screenshot 2024-08-31 at 11-23-08 Signup](https://github.com/user-attachments/assets/5820a892-25ef-4640-9bf7-cca6f5ba48b4)
+
+### Success Page
+![Screenshot 2024-08-31 at 11-23-41 Success](https://github.com/user-attachments/assets/bb7f8033-1936-4a2f-bf24-7136af06a671)
+
+## Architecture
 
 The frontend architecture is organized in a component-based structure:
 
@@ -22,7 +34,7 @@ The frontend architecture is organized in a component-based structure:
 - **Services**: Handle API calls and business logic (e.g., `saveUser` function).
 - **Routing**: Managed using React Router to navigate between pages.
 
-### Project Structure
+## Project Structure
 
 ```
 /src
@@ -40,15 +52,15 @@ The frontend architecture is organized in a component-based structure:
 |-- main.jsx
 ```
 
-### State Management
+## State Management
 
 State is managed using React Hooks (`useState`, `useEffect`). Each page component manages its own state to keep track of form data, submission status, and errors.
 
-### Routing
+## Routing
 
 Routing is managed using **React Router**. The `App.js` file defines routes for the Signup and Confirmation pages.
 
-#### Example Routes
+### Example Routes
 
 ```jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -69,7 +81,7 @@ function App() {
 export default App;
 ```
 
-### Form Handling
+## Form Handling
 
 Form handling is done using controlled components and a form submit handler that makes an API call to the backend.
 
@@ -87,11 +99,11 @@ const handleSubmit = async (e) => {
 };
 ```
 
-### Error Handling
+## Error Handling
 
 Errors are displayed to the user using Bootstrap's Alert component, providing feedback when form submission fails.
 
-### Running the Application
+## Running the Application
 
 1. **Clone the Repository**:
 
